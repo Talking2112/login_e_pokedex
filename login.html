@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+<style>
+/* Resetando margem e definindo fonte para a pagina toda*/
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Courier New', Courier, monospace;
+    }
+    /* Definindo fundo da pagina como um grandiente e centrelizando*/
+    body{
+        height: 100vh;
+        background: linear-gradient(to right, red , yellow);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .login-container{
+        background: white;
+        padding: 40px 30px;
+        border-radius: 12px;
+        width: 300px;
+        text-align: center;
+        box-shadow: 0px 10px 20px rgba(0, 0, 0, 8)
+    }
+    /*Estilizar o titulo*/
+    .login-container h2{
+        margin-bottom: 20px;
+        color: #333;
+    }
+    /*Estilizar os campos de entrada.(usuario e senha)*/
+    .login-container input{
+        width: 100px;
+        padding: 10px 15px;
+        margin: 10px 0;
+        border: 1px solid #ccc;
+        border-radius: 8px;
+        font-size: 14px;
+    }
+    /*estilizando o botão*/
+    .login-container button{
+        width: 100%;
+        padding: 12px;
+        margin-top: 15px;
+        border-radius: 8px;
+        border: none;
+        background: #6c63ff;
+        color: white;
+        font-size: 16px;
+        font-weight: bold;
+        cursor: pointer;
+        transition: background 0.3s;
+    }
+    .login-container button:hover{
+        background: #5848c2;    /*Animação do botão*/
+    }
+    /*estilizando a senha*/
+
+</style>
+</head>
+<body>
+    <!--Container da tela de login-->
+    <div class="login-container">
+        <h2>Login</h2>
+        <form>
+            <input type="text" placeholder="Usuário" required>
+            <input type="password" placeholder="Senha" required>
+            <button type="submit">Entre</button>
+        </form>
+        <p>Esqueceu a senha?</p>
+    </div>
+</body>
+</html>

@@ -39,7 +39,7 @@
 
         .container h1 {
             font-size: 28px;
-            margin-top: 15px;
+            margin-bottom: 15px;
         }
 
         .imagem-pokemon {
@@ -49,6 +49,53 @@
              border-radius: 15px;
              object-fit: contain;
              box-shadow: 0 4px 12px rgba(0, 0, 0, 0.6);
+        }
+
+        .info-pokemon {
+            font-size: 18px;
+            color: #555;
+        }
+
+        .info-pokemon p{
+            margin: 6px 0;
+        }
+
+        .fita-tipo {
+            display: inline-block;
+            background-color: #86d6a0;
+            padding: 5px 12px;
+            border-radius: 12px;
+            font-size: 14px;
+            margin-top: 8px;
+        }
+
+        .area-busca {
+            margin-top: 20px;
+        }
+
+        .area-busca input {
+            padding: 8px;
+            border-radius: 8px;
+            border: 1px solid #ccc;
+            width: 80px;
+            margin-bottom: 10px;
+            font-size: 14px;
+        }
+
+        .area-busca button {
+            padding: 8px 16px;
+            background-color: #118ab2;
+            color: #ccc;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-weight: bold;
+            transition: background-color 0.3s ease, trasform 0.3s ease;
+        }
+
+        .area-busca button:hover {
+            background-color: #0a5373;
+            transform: scale(1.1);
         }
     </style>
 </head>
@@ -68,6 +115,7 @@
         <div class="area-busca">
             <input type="text" id="entrada" placeholder="Informe o nome ou numero">
             <button id="botao-buscar">Buscar</button>
+            <script src="script.js"></script>
         </div>
     </div>
 </body>
